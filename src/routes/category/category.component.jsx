@@ -23,7 +23,7 @@ const GET_CATEGORY = gql`
 const Category = () => {
 	const { category } = useParams();
 
-	const { loading, error, data } = useQuery(GET_CATEGORY, {
+	const { loading, data } = useQuery(GET_CATEGORY, {
 		variables: {
 			title: category,
 		},
