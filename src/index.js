@@ -9,6 +9,7 @@ import { CategoriesProvider } from './contexts/categories.context';
 import { CartProvider } from './contexts/cart.context';
 
 import './index.scss';
+import { GlobalStyle } from './global.styles';
 
 const rootElement = document.getElementById('root');
 const client = new ApolloClient({
@@ -24,6 +25,7 @@ render(
 					<CategoriesProvider>
 						<CartProvider>
 							<App />
+							<GlobalStyle />
 						</CartProvider>
 					</CategoriesProvider>
 				</UserProvider>
